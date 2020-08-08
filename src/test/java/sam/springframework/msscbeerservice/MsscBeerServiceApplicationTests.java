@@ -3,11 +3,13 @@ package sam.springframework.msscbeerservice;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+
 @SpringBootTest
-class MsscBeerServiceApplicationTests {
+public class MsscBeerServiceApplicationTests {
 
     @Test
-    void contextLoads() {
+    public void contextLoads() {
+
     }
 
 }
