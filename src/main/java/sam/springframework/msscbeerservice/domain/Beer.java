@@ -20,6 +20,7 @@ import java.util.UUID;
 @Builder
 @Entity
 public class Beer {
+
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name= "UUID", strategy = "org.hibernate.UUIDGenerator")
