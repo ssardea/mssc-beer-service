@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import sam.springframework.msscbeerservice.web.model.BeerDto;
 
+import javax.validation.Valid;
 import java.util.UUID;
 
 @RestController
@@ -24,7 +25,7 @@ public class BeerController {
     }
 
     @PutMapping("/{beerId}")
-    private ResponseEntity updateBeer(@PathVariable("beerId") UUID beerID, @RequestBody BeerDto beerDto){
+    private ResponseEntity updateBeer(@PathVariable("beerId") UUID beerID, @Valid @RequestBody BeerDto beerDto){
         return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
 }
