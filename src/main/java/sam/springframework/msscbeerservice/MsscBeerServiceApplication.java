@@ -9,14 +9,10 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 //(exclude={DataSourceAutoConfiguration.class})
 @Slf4j
 @SpringBootApplication
-public class MsscBeerServiceApplication implements CommandLineRunner {
+public class MsscBeerServiceApplication{
 
     public static void main(String[] args) {
         SpringApplication.run(MsscBeerServiceApplication.class, args);
     }
 
-    @Override
-    public void run(String... args) throws Exception {
-        log.info("Test Close Issue 1");
-    }
 }
